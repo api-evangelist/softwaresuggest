@@ -1,0 +1,51 @@
+{
+  "id": "crm-salesforce",
+  "name": "Salesforce CRM",
+  "slug": "salesforce-crm",
+  "description": "Salesforce CRM is the world's leading customer relationship management platform, helping businesses track leads, manage sales pipelines, automate workflows, and connect with customers across every channel.",
+  "category": "CRM Software",
+  "subcategories": [
+    "Sales Force Automation",
+    "Marketing Automation",
+    "Customer Service Software"
+  ],
+  "vendor": {
+    "id": "vendor-salesforce",
+    "name": "Salesforce",
+    "website": "https://www.salesforce.com/",
+    "founded": 1999,
+    "headquarters": "San Francisco, CA, USA"
+  },
+  "deploymentTypes": ["cloud"],
+  "organizationSizes": ["small-business", "mid-market", "enterprise"],
+  "pricingModel": "subscription",
+  "startingPrice": 25.00,
+  "hasFreeTrialOrDemo": true,
+  "rating": {
+    "overall": 4.4,
+    "easeOfUse": 3.9,
+    "valueForMoney": 3.8,
+    "customerSupport": 4.1,
+    "reviewCount": 2847
+  },
+  "features": [
+    "Contact Management",
+    "Lead Tracking",
+    "Opportunity Management",
+    "Sales Forecasting",
+    "Workflow Automation",
+    "Analytics and Reporting",
+    "Mobile App",
+    "AppExchange Marketplace"
+  ],
+  "integrations": [
+    "Slack",
+    "Microsoft Outlook",
+    "Gmail",
+    "Tableau",
+    "Marketo",
+    "DocuSign"
+  ],
+  "productUrl": "https://www.softwaresuggest.com/salesforce-crm",
+  "listingType": "premium"
+}

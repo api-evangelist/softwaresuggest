@@ -1,0 +1,23 @@
+{
+  "name": "Product Listing",
+  "description": "A software product listed on SoftwareSuggest with category, vendor, pricing, and ratings.",
+  "fields": [
+    { "name": "id", "type": "string", "required": true, "description": "Product listing identifier" },
+    { "name": "name", "type": "string", "required": true, "description": "Product name" },
+    { "name": "slug", "type": "string", "required": false, "description": "URL slug" },
+    { "name": "description", "type": "string", "required": false, "description": "Product description" },
+    { "name": "category", "type": "string", "required": true, "description": "Primary software category" },
+    { "name": "subcategories", "type": "array<string>", "required": false, "description": "Additional categories" },
+    { "name": "vendor", "type": "object", "required": true, "description": "Vendor with name, website, founded, headquarters" },
+    { "name": "deploymentTypes", "type": "array<string>", "required": false, "description": "cloud, on-premise, or hybrid" },
+    { "name": "organizationSizes", "type": "array<string>", "required": false, "description": "small-business, mid-market, enterprise" },
+    { "name": "pricingModel", "type": "string", "required": false, "description": "free, freemium, subscription, one-time, quote-based" },
+    { "name": "startingPrice", "type": "number", "required": false, "description": "Starting price per user/month USD" },
+    { "name": "hasFreeTrialOrDemo", "type": "boolean", "required": false, "description": "Free trial or demo availability" },
+    { "name": "rating", "type": "object", "required": false, "description": "Aggregate ratings: overall, easeOfUse, valueForMoney, customerSupport, reviewCount" },
+    { "name": "features", "type": "array<string>", "required": false, "description": "Key product features" },
+    { "name": "integrations", "type": "array<string>", "required": false, "description": "Compatible integrations" },
+    { "name": "productUrl", "type": "uri", "required": false, "description": "SoftwareSuggest listing URL" },
+    { "name": "listingType", "type": "string", "required": false, "description": "free or premium listing" }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "ss": "https://api-evangelist.com/vocab/softwaresuggest#",
+    "schema": "https://schema.org/",
+    "gr": "http://purl.org/goodrelations/v1#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "ProductListing": "gr:ProductOrService",
+    "Review": "schema:Review",
+    "Organization": "schema:Organization",
+    "Person": "schema:Person",
+
+    "id": "@id",
+    "type": "@type",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "slug": "schema:identifier",
+
+    "category": "schema:applicationCategory",
+    "subcategories": "schema:applicationSubCategory",
+    "vendor": "schema:brand",
+    "website": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "founded": {
+      "@id": "schema:foundingDate",
+      "@type": "xsd:gYear"
+    },
+    "headquarters": "schema:address",
+
+    "deploymentTypes": "ss:deploymentTypes",
+    "organizationSizes": "ss:organizationSizes",
+    "pricingModel": "ss:pricingModel",
+    "startingPrice": "gr:hasCurrencyValue",
+    "hasFreeTrialOrDemo": "schema:offers",
+    "features": "schema:featureList",
+    "integrations": "ss:integrations",
+    "productUrl": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "listingType": "ss:listingType",
+
+    "overallRating": "schema:ratingValue",
+    "easeOfUseRating": "ss:easeOfUseRating",
+    "valueForMoneyRating": "ss:valueForMoneyRating",
+    "customerSupportRating": "ss:customerSupportRating",
+    "reviewCount": "schema:reviewCount",
+    "rating": "schema:aggregateRating",
+
+    "title": "schema:name",
+    "body": "schema:reviewBody",
+    "pros": "ss:pros",
+    "cons": "ss:cons",
+    "reviewer": "schema:author",
+    "jobTitle": "schema:jobTitle",
+    "industry": "schema:industry",
+    "verified": "ss:verified",
+    "helpful": "ss:helpful",
+    "publishedAt": {
+      "@id": "schema:datePublished",
+      "@type": "xsd:dateTime"
+    }
+  }
+}

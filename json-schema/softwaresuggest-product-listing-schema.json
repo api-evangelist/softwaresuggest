@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.com/schemas/softwaresuggest/product-listing",
+  "title": "Product Listing",
+  "description": "A software product listed on the SoftwareSuggest platform with category, pricing, features, and review data.",
+  "type": "object",
+  "required": ["id", "name", "category", "vendor"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the product listing."
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the software product."
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly identifier used in product page URLs."
+    },
+    "description": {
+      "type": "string",
+      "description": "Full description of the software product."
+    },
+    "category": {
+      "type": "string",
+      "description": "Primary software category this product belongs to."
+    },
+    "subcategories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Additional software categories this product belongs to."
+    },
+    "vendor": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Vendor identifier."
+        },
+        "name": {
+          "type": "string",
+          "description": "Vendor company name."
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "description": "Vendor's website URL."
+        },
+        "founded": {
+          "type": "integer",
+          "description": "Year the vendor was founded."
+        },
+        "headquarters": {
+          "type": "string",
+          "description": "Vendor's headquarters location."
+        }
+      },
+      "description": "Information about the software vendor."
+    },
+    "deploymentTypes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["cloud", "on-premise", "hybrid"]
+      },
+      "description": "Available deployment options for this product."
+    },
+    "organizationSizes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["small-business", "mid-market", "enterprise"]
+      },
+      "description": "Organization sizes this product is designed to serve."
+    },
+    "pricingModel": {
+      "type": "string",
+      "enum": ["free", "freemium", "subscription", "one-time", "quote-based"],
+      "description": "How the product is priced."
+    },
+    "startingPrice": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Starting price per user per month in USD, if applicable."
+    },
+    "hasFreeTrialOrDemo": {
+      "type": "boolean",
+      "description": "Whether the vendor offers a free trial or demo.",
+      "default": false
+    },
+    "rating": {
+      "type": "object",
+      "properties": {
+        "overall": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Overall average rating out of 5."
+        },
+        "easeOfUse": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "valueForMoney": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "customerSupport": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "reviewCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of verified reviews."
+        }
+      },
+      "description": "Aggregate ratings and review statistics."
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Key features of the software product."
+    },
+    "integrations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Software products and platforms this product integrates with."
+    },
+    "productUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL of this product's listing page on SoftwareSuggest."
+    },
+    "listingType": {
+      "type": "string",
+      "enum": ["free", "premium"],
+      "description": "Whether this is a free or premium vendor listing.",
+      "default": "free"
+    }
+  },
+  "additionalProperties": false
+}

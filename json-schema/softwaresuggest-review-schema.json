@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.com/schemas/softwaresuggest/review",
+  "title": "User Review",
+  "description": "A verified user review of a software product on SoftwareSuggest, including ratings across multiple dimensions.",
+  "type": "object",
+  "required": ["id", "productId", "overallRating", "publishedAt"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the review."
+    },
+    "productId": {
+      "type": "string",
+      "description": "Identifier of the product being reviewed."
+    },
+    "title": {
+      "type": "string",
+      "description": "Short title summarizing the reviewer's experience."
+    },
+    "body": {
+      "type": "string",
+      "description": "Full text of the review."
+    },
+    "overallRating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Overall rating out of 5 stars."
+    },
+    "easeOfUseRating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Rating for ease of use."
+    },
+    "valueForMoneyRating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Rating for value for money."
+    },
+    "customerSupportRating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Rating for customer support quality."
+    },
+    "pros": {
+      "type": "string",
+      "description": "What the reviewer liked about the product."
+    },
+    "cons": {
+      "type": "string",
+      "description": "What the reviewer disliked or would improve about the product."
+    },
+    "reviewer": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Reviewer's display name."
+        },
+        "jobTitle": {
+          "type": "string",
+          "description": "Reviewer's professional role."
+        },
+        "industry": {
+          "type": "string",
+          "description": "Industry the reviewer works in."
+        },
+        "organizationSize": {
+          "type": "string",
+          "enum": ["small-business", "mid-market", "enterprise"],
+          "description": "Size of the reviewer's organization."
+        }
+      },
+      "description": "Anonymized reviewer profile information."
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "Whether the review has been verified by SoftwareSuggest.",
+      "default": true
+    },
+    "publishedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the review was published."
+    },
+    "helpful": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of users who marked this review as helpful."
+    }
+  },
+  "additionalProperties": false
+}

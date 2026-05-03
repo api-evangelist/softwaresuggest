@@ -1,0 +1,21 @@
+{
+  "id": "review-87342",
+  "productId": "crm-salesforce",
+  "title": "Powerful CRM but requires investment to get full value",
+  "body": "Salesforce has been a transformative tool for our sales team over the past two years. The pipeline management and automation capabilities are excellent. However, the learning curve is significant and we needed dedicated Salesforce admin resources to configure it properly for our needs. Once set up, the reporting and forecasting features have given our leadership team real-time visibility they never had before.",
+  "overallRating": 4.0,
+  "easeOfUseRating": 3.5,
+  "valueForMoneyRating": 3.5,
+  "customerSupportRating": 4.0,
+  "pros": "Highly customizable, excellent AppExchange ecosystem, strong reporting and dashboards, great mobile app.",
+  "cons": "Steep learning curve, can be expensive for smaller teams, requires admin expertise to maintain.",
+  "reviewer": {
+    "name": "Priya M.",
+    "jobTitle": "VP of Sales",
+    "industry": "Software & Technology",
+    "organizationSize": "mid-market"
+  },
+  "verified": true,
+  "publishedAt": "2026-04-15T09:30:00Z",
+  "helpful": 23
+}
