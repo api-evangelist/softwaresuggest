@@ -2,12 +2,20 @@
   "repo": "softwaresuggest",
   "feeds": [
     {
+      "source": "https://www.softwaresuggest.com/blog/feed/",
+      "feed_url": "https://www.softwaresuggest.com/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://www.softwaresuggest.com/blog/",
       "feed_url": "https://www.softwaresuggest.com/blog/feed/",
-      "title": "SoftwareSuggest Blog",
-      "saved": 6
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
     }
   ],
-  "post_count": 22,
-  "fetched": "2026-05-17T20:20:35Z"
+  "post_count": 32,
+  "fetched": "2026-06-01T23:35:02Z"
 }
