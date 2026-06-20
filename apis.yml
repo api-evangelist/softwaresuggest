@@ -11,7 +11,7 @@ description: >-
   does not currently publish a public developer API but operates as a data provider
   via marketplaces such as Datarade for business data products.
 type: Index
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Software Discovery
   - Business Software
