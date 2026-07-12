@@ -1,0 +1,27 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.softwaresuggest.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 22 00:29:08 2026 GMT
+  hsts: false
+- host: datarade.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 13 03:09:08 2026 GMT
+  hsts: null
+domains:
+- domain: softwaresuggest.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
+- domain: datarade.ai
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

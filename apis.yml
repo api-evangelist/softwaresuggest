@@ -99,6 +99,8 @@ apis:
       - type: Website
         url: https://datarade.ai/data-providers/softwaresuggest/profile
 common:
+  - type: DomainSecurity
+    url: security/softwaresuggest-domain-security.yml
   - url: https://www.softwaresuggest.com/
     name: SoftwareSuggest Website
     type: Website
