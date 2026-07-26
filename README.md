@@ -28,14 +28,6 @@ A browsable and searchable index of over 50,000 B2B software products across 800
 
 ---
 
-### SoftwareSuggest Vendor Portal
-Enables software vendors to create and manage product listings, track leads, monitor analytics, and purchase premium visibility plans including PPC campaigns and MQL services.
-
-**Human URL:** [Vendor Program](https://www.softwaresuggest.com/vendors)
-
-**Tags:** Vendor Management, Lead Generation, Product Listing, Analytics
-
----
 
 ### SoftwareSuggest Affiliate Program
 A CPL-based partner program where affiliates earn commissions by driving verified leads to the platform through tracking links and banners.

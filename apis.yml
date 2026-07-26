@@ -11,7 +11,19 @@ description: >-
   does not currently publish a public developer API but operates as a data provider
   via marketplaces such as Datarade for business data products.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/softwaresuggest.png
 tags:
   - Software Discovery
   - Business Software
@@ -20,7 +32,7 @@ tags:
   - B2B
 url: https://raw.githubusercontent.com/api-evangelist/softwaresuggest/refs/heads/main/apis.yml
 created: '2025-01-01'
-modified: '2026-05-02'
+modified: '2026-07-25'
 specificationVersion: '0.19'
 apis:
   - aid: softwaresuggest:software-catalog
@@ -44,26 +56,6 @@ apis:
         url: https://www.softwaresuggest.com/all-categories
       - type: Website
         url: https://www.softwaresuggest.com/
-  - aid: softwaresuggest:vendor-portal
-    name: SoftwareSuggest Vendor Portal
-    description: >-
-      The SoftwareSuggest Vendor Portal enables software vendors to create and
-      manage product listings, track leads, monitor performance analytics, and
-      purchase premium visibility plans including PPC campaigns, MQL services,
-      and branded content. Vendors access the portal at
-      softwaresuggest.com/vendorsportal.
-    humanURL: https://www.softwaresuggest.com/vendors
-    baseURL: https://www.softwaresuggest.com/vendorsportal
-    tags:
-      - Vendor Management
-      - Lead Generation
-      - Product Listing
-      - Analytics
-    properties:
-      - type: Documentation
-        url: https://www.softwaresuggest.com/vendors/guidelines
-      - type: Website
-        url: https://www.softwaresuggest.com/vendors
   - aid: softwaresuggest:affiliate-program
     name: SoftwareSuggest Affiliate Program
     description: >-
