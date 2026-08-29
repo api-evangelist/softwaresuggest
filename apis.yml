@@ -48,6 +48,8 @@ tags_raw:
   - Software Reviews
   - B2B
 url: https://raw.githubusercontent.com/api-evangelist/softwaresuggest/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 created: '2025-01-01'
 modified: '2026-07-25'
 specificationVersion: '0.23'
