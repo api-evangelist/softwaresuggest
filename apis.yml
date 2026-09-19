@@ -86,6 +86,11 @@ apis:
     baseURL: https://www.softwaresuggest.com
     tags:
       - Affiliate Marketing
+      - Partner Programs
+      - Lead Generation
+      - CPL
+    tags_raw:
+      - Affiliate Marketing
       - Partner Program
       - Lead Generation
       - CPL
