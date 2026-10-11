@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "softwaresuggest",
+    "captured_at": "2026-10-11T192605",
+    "source_url": "https://www.softwaresuggest.com/vendorsportal/index.php?r=site/login",
+    "source_type": "Portal",
+    "file": "softwaresuggest-2026-10-11T192605.png",
+    "bytes": 90463,
+    "capture": "playwright-local"
+  }
+]
